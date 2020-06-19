@@ -1,0 +1,9 @@
+{
+"navigationBarTextStyle":"black",
+"navigationBarBackgroundColor":"#fff",
+"navigationBarTitleText":"Niubi",
+"enablePullDownRefresh":true,
+"backgroundTextStyle":"dark",
+"backgroundColor":"#FAFAD2",
+"onReachBottomDistance":"10px"
+}

@@ -1,0 +1,24 @@
+.commodity-list-view{  /* 商品列表view */
+  width: 100%;
+  position: absolute;
+  top:32%;
+}
+.commodity-list{  /* 商品列表ul class */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.commodity{    /* 商品列表li class */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 13px;
+} 
+.commodity-image{  /* 商品图片 class */
+  width: 80%;
+  height:35px;
+}

@@ -1,0 +1,20 @@
+.news-view{
+ position: absolute;
+  top:58%;
+  width: 100%;
+  background: 	#F0F0F0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  height: 10%;
+}
+.news{
+  width: 70%;
+  height: 80%;
+  margin: 5% 0;
+}
+.news-image{
+  width: 15%;
+  height: 40%;
+  margin: 5% 5%;
+}

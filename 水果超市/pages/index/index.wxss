@@ -1,0 +1,55 @@
+/**index.wxss**/
+@import "../css/Image-search.wxss";
+@import "../css/commodity-list.wxss";
+@import "../css/news.wxss";
+@import "../css/Element.wxss";
+
+.ShowCommodity-view{
+  width: 100%;
+  position:  absolute;
+  top:75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ShowCommodity{
+  width: 50%;
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 6%;
+}
+.ShowCommodity-image{
+  display: flex;
+  width: 90%;
+  height:150px;
+  padding: 5% 5%;
+}
+.rows-x {
+  width:1px;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  top:3%;
+  left: 50%;
+}
+.ShowCommodity-text{
+  font-size: 70%;
+  margin-left: 10%;
+  
+}
+
+.el-carousel__item view {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }

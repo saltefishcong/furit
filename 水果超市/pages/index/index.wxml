@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.4.6/lib/index.js"></script>
+<view class="section">
+
+  <view class='search-text-view'>
+    <input type='text' id="search-text" name="search-text" placeholder=' Niubi|   火爆潮款' class="search-text" bindfocus="searchText" />
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-color="#FFFFFF" class="image-search">
+    <block wx:for="{{images}}">
+      <swiper-item>
+        <image src='{{item}}' data-src="{{item}}" bindtap="show" class="image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="commodity-list-view">
+    <ul class="commodity-list">
+      <li class='commodity'>
+        <image src="../icon/TransformationIcon/热销.png" mode="aspectFit" class="commodity-image" />火爆热销 </li>
+      <li class='commodity'>
+        <image src="../icon/TransformationIcon/店铺.png" mode="aspectFit" class="commodity-image" /> 特价店铺 </li>
+      <li class='commodity'>
+        <image src="../icon/TransformationIcon/特色食材.png" mode="aspectFit" class="commodity-image" />地方美食 </li>
+      <li class='commodity'>
+        <image src="../icon/TransformationIcon/折扣.png" mode="aspectFit" class="commodity-image" />优惠折扣 </li>
+      <li class='commodity'>
+        <image src="../icon/TransformationIcon/养生.png" mode="aspectFit" class="commodity-image" />绿色养生 </li>
+      <li class='commodity'>
+        <image src="../icon/TransformationIcon/国际货运.png" mode="aspectFit" class="commodity-image" />国际直销 </li>
+      <li class='commodity'>
+        <image src="../icon/TransformationIcon/更多.png" mode="aspectFit" class="commodity-image" />更多</li>
+    </ul>
+  </view>
+
+  <view class="news-view">
+    <image src='{{news.image}}' class="news-image" mode="aspectFit" />
+  <swiper autoplay="{{news.autoplay}}" interval="{{news.interval}}" duration="{{news.duration}}" circular="{{news.circular}}" vertical="{{news.vertical}}" class="news">
+    <block wx:for="{{news.content}}">
+      <swiper-item>
+        <view>
+          {{item}}
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+
+  <view class="ShowCommodity-view">
+    <view class="rows-x">
+    </view>
+     <view wx:for="{{ShowCommodity.CommodityID}}" data-id="{{item}}" class="ShowCommodity">
+       <image src="{{ShowCommodity.image[index]}}"   mode='aspectFit' class='ShowCommodity-image' ></image> 
+        <SelfOperatedMark wx:if="{{ShowCommodity.SelfOperatedMark[index]}}">Niubi自营</SelfOperatedMark>
+        <text class="ShowCommodity-text">{{ShowCommodity.title[index]}}</text>  
+     </view>
+  </view>
+
+</view>
